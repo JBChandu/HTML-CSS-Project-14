@@ -1,0 +1,156 @@
+/*  */
+body {
+  max-height: 100vh;
+  margin: auto;
+}
+/* navbar  */
+.navbar {
+  display: grid;
+  grid-template-columns: 0.7fr 0.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-logo {
+  height: 40px;
+  margin-left: 10%;
+  z-index: 1;
+}
+nav .list-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+.list-item {
+  text-align: Center;
+  opacity: 0.7;
+}
+.hr-line {
+  border: 1px solid black;
+  width: 100%;
+  margin-right: -15%;
+  z-index: 1;
+}
+
+/* splitter */
+.splitter {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+
+.splitter .right {
+  display: grid;
+  grid-template-rows: auto;
+}
+/* banner */
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.banner h1 {
+  font-size: 90px;
+  margin-top: -8%;
+}
+.banner p {
+  font-size: 30px;
+  margin-left: 45%;
+  margin-top: 45%;
+}
+h1.white-bg {
+  color: #fff;
+  text-shadow: 0 0 5px gray;
+}
+.black-bg {
+  color: #000;
+  padding-left: 40%;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  margin-right: -40%;
+}
+.social-icon {
+  height: 30px;
+}
+.banner-btn {
+  margin-left: 50%;
+  margin-right: 10%;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1f1f1f;
+  padding: 5px 10px;
+}
+/* end section */
+.end-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: end;
+}
+.end-section .right p {
+  padding-right: 20%;
+}
+.dancing {
+  margin-left: 10%;
+  height: 200px;
+}
+.bg-image {
+  height: 700px;
+  object-fit: cover;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  height: 90px;
+}
+.quote {
+  height: 60px;
+}
+.end-section .list-items {
+  margin-left: -30%;
+  /* margin-top: -60%; */
+  list-style-type: none;
+  /* line-height: 2; */
+}
+.list-item {
+  text-align: left;
+  margin-left: 30%;
+}
+.end-section .list-items li::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-left: -29px;
+  margin-top: 12px;
+  position: absolute;
+  background-color: #2b2525;
+}
+.end-section .right {
+  margin-left: -20%;
+}
+
+/* timeline bar */
+.end-section .list-items li {
+  border-left: 2px solid #2b2525;
+  line-height: 3;
+  padding-left: 20px;
+}
+
+.end-section .list-items li:first-child::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgb(4, 73, 4);
+  margin-left: -29px;
+  margin-top: 12px;
+  position: absolute;
+  background-color: #fff;
+}
